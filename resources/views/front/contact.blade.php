@@ -34,7 +34,7 @@
                 <div class="flex items-center space-x-4">
                   <!-- Icon -->
                   <div class="bg-purple-gradient rounded-md flex items-center justify-center w-14 h-12">
-                    <img src="{{ asset('images/images/phone.png') }}" alt="Phone Icon" class="w-8 h-8">
+                    <img src="{{ asset('images/images/whatsapp.png') }}" alt="Phone Icon" class="w-8 h-8">
                   </div>
                   <!-- Text -->
                   <div>
@@ -46,7 +46,7 @@
                 <div class="flex items-center space-x-4">
                   <!-- Icon -->
                   <div class="bg-purple-gradient rounded-md flex items-center justify-center w-14 h-12">
-                    <img src="{{ asset('images/images/phone.png') }}" alt="Phone Icon" class="w-8 h-8">
+                    <img src="{{ asset('images/images/whatsapp.png') }}" alt="Phone Icon" class="w-8 h-8">
                   </div>
                   <!-- Text -->
                   <div>
@@ -58,7 +58,7 @@
                 <div class="flex items-center space-x-4">
                   <!-- Icon -->
                   <div class="bg-purple-gradient rounded-md flex items-center justify-center w-14 h-12">
-                    <img src="images/gmail.png" alt="Phone Icon" class="w-8 h-8">
+                    <img src="{{ asset('images/images/gmail.png') }}" alt="Phone Icon" class="w-8 h-8">
                   </div>
                   <!-- Text -->
                   <div>
@@ -73,7 +73,8 @@
           <!-- Kolom Form -->
           <div class="bg-white rounded-lg shadow-lg p-6 w-full md:w-[600px] min-h-[500px]">
             <h2 class="text-2xl font-bold text-purple-700 mb-4">Send us a message</h2>
-            <form class="space-y-8">
+            <form class="space-y-8" method="POST" action="{{ route('contact.store') }}">
+              @csrf
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label for="name" class="block text-md font-bold text-purple-700">Name</label>

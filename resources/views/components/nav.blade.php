@@ -14,7 +14,6 @@
                 class="font-medium text-aktiv-grey hover:font-semibold hover:text-aktiv-orange transition-all duration-300 mobile-item-spacing text-center">
                 <a href="/">Beranda</a>
             </li>
-
             <!-- Tentang Kami dengan Dropdown -->
             <li class="relative">
                 <button @click="openDropdown = !openDropdown"
@@ -47,9 +46,9 @@
         </ul>
     </div>
 
-    <button>
+    {{-- <button>
         <i class="ri-menu-3-line block md:hidden text-2xl"></i>
-    </button>
+    </button> --}}
 </nav>
 <nav id="bottom-navigation"
 class="block lg:hidden fixed inset-x-0 bottom-0 bg-white shadow z-[99999] border-t border-gray-200 py-2"

@@ -13,9 +13,7 @@
                                 class="text-purple-gradient text-4xl font-extrabold font-manrope leading-normal lg:text-start text-center">
                                 BEM TRILOGI {{ date('Y') }}</h2>
                             <p class="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
-                                BEM TRILOGI is a student organization that runs an executive function in the Faculty of
-                                Economics and Business, Universitas Indonesia. We aim to be active, responsive, and
-                                constructive through various actions, devotions, and services.</p>
+                                BEM TRILOGY is a student organization that carries out the executive functions of the Trilogy University. We strive to be active, responsive, and constructive through various actions, devotion, and services.</p>
                         </div>
                     </div>
                 </div>

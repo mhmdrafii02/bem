@@ -71,7 +71,7 @@
                                             alt="" />
                                     </div>
                                     <div class="bg-purple-gradient p-4 rounded-xl opacity-0 absolute bottom-0 z-20 transition duration-300 ease-in-out group-hover:scale-105 group-hover:opacity-100">
-                                        <h1 class="text-lg font-bold text-white">{{ $itemapresiasis->nama }}</h1>
+                                        {{-- <h1 class="text-lg font-bold text-white">{{ $itemapresiasis->nama }}</h1> --}}
                                         <h2 class="text-base font-light text-gray-200">{{ $itemapresiasis->prestasi }}</h2>
                                     </div>
                                 </div>

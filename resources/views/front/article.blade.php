@@ -90,13 +90,13 @@
   <h2 class="text-xl sm:text-2xl font-bold text-purple-900 border-b-4 border-green-400 pb-2">BEASISWA</h2>
   <div class="mt-4 space-y-4">
     @forelse ($beasiswaArticles as $beasiswaArticle)
-    <div class="flex flex-col sm:flex-col lg:flex-row md:flex-row bg-white rounded-lg border overflow-hidden hover:border-blue-500">
+    <a href="{{ route('front.detailArticle', $beasiswaArticle->slug) }}" class="flex flex-col sm:flex-col lg:flex-row md:flex-row bg-white rounded-lg border overflow-hidden hover:border-blue-500">
       <img src="{{ Storage::url($beasiswaArticle->thumbnail) }}" alt="Beasiswa 1" class="m-3 h-32 object-cover" />
       <div class="p-4 flex flex-col justify-center">
         <h3 class="pr-8 text-lg lg:text-left sm:text-center md:text-left text-center sm:text-base font-bold text-gray-800">{{ $beasiswaArticle->title }}</h3>
         <p class="text-gray-600 text-center md:text-left lg:text-left pr-8 sm:text-center">Pertama di Indonesia Beasiswa untuk Mahasiswa Hemat</p>
       </div>
-    </div>
+    </a>
     @empty
         <p>Empty</p>
     @endforelse   
